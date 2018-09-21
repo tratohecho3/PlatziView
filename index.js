@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
+import {render} from 'react-dom';
+import Media from  './src/playlist/components/media';
 
 const app = document.getElementById('app')
-const holaMundo = <h1>Hola mundooo!</h1>
-ReactDOM.render(holaMundo,app)
+ render(<Media type="video" title="What is Responsive Design?" author="Cesar Colina" image="./images/covers/responsive.jpg" />,app)
